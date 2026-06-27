@@ -1,0 +1,20 @@
+# Internal business/strategy notes — keep private, do NOT publish
+PLAN.md
+
+# Build output (installer is shipped via GitHub Releases, not committed)
+Output/
+
+# Bundled binary runtime — downloaded separately (GPL; provide via Releases / build step)
+src/AutoHotkey64.exe
+*.exe
+
+# Inno Setup build leftovers
+*.iss.bak
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+.vs/
+.idea/
+*.swp

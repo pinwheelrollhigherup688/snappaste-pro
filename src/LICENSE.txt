@@ -1,0 +1,26 @@
+SnapPaste Pro -- End User License Agreement
+Copyright (c) Saqib Bin Shabbir (Full Stack Developer & Agentic AI Specialist).
+All rights reserved.
+
+1. GRANT OF LICENSE
+   This software ("SnapPaste Pro") is licensed, not sold, to you for use
+   strictly in accordance with the terms of this agreement.
+
+2. PERMITTED USE
+   You may install and use one copy of SnapPaste Pro on the device on which
+   it was installed, for personal or internal business use.
+
+3. RESTRICTIONS
+   You may not resell, sublicense, rent, or redistribute SnapPaste Pro
+   without the prior written permission of Saqib Bin Shabbir.
+
+4. NO WARRANTY
+   The software is provided "AS IS" without warranty of any kind, express or
+   implied. The author is not liable for any damages arising from its use.
+
+5. THIRD-PARTY COMPONENTS
+   SnapPaste Pro bundles the AutoHotkey runtime (AutoHotkey64.exe), which is
+   distributed under the GNU GPLv2. AutoHotkey is the property of its
+   respective authors. See https://www.autohotkey.com for details.
+
+By installing this software you agree to the terms above.

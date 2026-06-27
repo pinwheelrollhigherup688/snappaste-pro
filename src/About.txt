@@ -1,0 +1,49 @@
+============================================================
+              S N A P P A S T E   P R O   v1.0
+============================================================
+
+   Mac-style screenshot paste for Windows terminals.
+
+   Ab Windows ke terminal (CMD / PowerShell / Claude Code)
+   mein bhi seedha Ctrl+V se screenshot paste karein --
+   bilkul Mac jaisa!
+
+------------------------------------------------------------
+  DEVELOPED BY
+------------------------------------------------------------
+
+   Saqib Bin Shabbir
+   Full Stack Developer & Agentic AI Specialist
+
+------------------------------------------------------------
+  KAISE USE KAREIN
+------------------------------------------------------------
+
+   1) Screenshot lein:  Win + Shift + S  (region select)
+   2) Apne terminal mein bas:  Ctrl + V
+
+      -> Image khud-ba-khud save ho jati hai aur uska
+         path paste ho jata hai.
+
+   Screenshots yahan save hoti hain:
+      <YourUser>\Pictures\SnapPaste Pro\
+
+------------------------------------------------------------
+  EXTRA COMMANDS
+------------------------------------------------------------
+
+   PowerShell mein:   pi          (phir Ctrl+V)
+   Command Prompt:    pasteimg    (phir Ctrl+V)
+
+------------------------------------------------------------
+  NOTES
+------------------------------------------------------------
+
+   * SnapPaste Pro login pe khud chalu ho jata hai.
+   * Sirf IMAGE par kaam karta hai -- normal text copy/paste
+     bilkul pehle jaisa tezz rehta hai.
+   * Uninstall: Settings > Apps > SnapPaste Pro > Uninstall.
+
+============================================================
+   (c) Saqib Bin Shabbir.  All rights reserved.
+============================================================

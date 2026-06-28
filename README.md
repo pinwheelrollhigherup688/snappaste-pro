@@ -59,7 +59,23 @@ Perfect for **Claude Code**, AI coding assistants, and any tool where you need t
 2. Run it (Next → Next → Finish). No admin needed.
 3. Done — take a screenshot and press `Ctrl + V` in your terminal.
 
-> First run may show a Windows SmartScreen prompt (unsigned app): click **More info → Run anyway**.
+> ### ⚠️ "Windows protected your PC" — this is normal, please read
+>
+> The first time you run the installer, Windows SmartScreen may show a blue
+> **"Windows protected your PC"** screen with **"Unknown publisher"**.
+>
+> **This does _not_ mean the app is unsafe.** It only appears because the app is
+> not yet code-signed (a paid certificate / Azure verification we haven't purchased
+> yet). To continue:
+>
+> 1. Click **More info**
+> 2. Click **Run anyway**
+>
+> That's it — it won't ask again. ✅
+>
+> **Why you can trust it:** the entire source code is public in this repo, so anyone
+> can read exactly what it does. It works fully offline — it never sends any data
+> anywhere, doesn't touch your files, and only reacts to `Ctrl + V` inside terminals.
 
 ### Option 2 — npm (for developers) _(coming soon)_
 ```bash

@@ -2,6 +2,11 @@
 PLAN.md
 MEMORY.md
 
+# Personal analytics tool + marketing drafts — keep private
+stats.ps1
+stats-history.csv
+marketing/
+
 # Build output (installer is shipped via GitHub Releases, not committed)
 Output/
 

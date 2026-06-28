@@ -5,7 +5,7 @@
 ### Mac-style screenshot paste for Windows terminals
 
 **Paste screenshots straight into your terminal with `Ctrl + V` — exactly like macOS.**
-Works in CMD, PowerShell, Windows Terminal, and Claude Code.
+Built for **terminal-based AI coding assistants** — hand a screenshot to your AI in one keystroke.
 
 [![npm version](https://img.shields.io/npm/v/snappaste-pro?color=cb3837&logo=npm)](https://www.npmjs.com/package/snappaste-pro)
 [![npm downloads](https://img.shields.io/npm/dt/snappaste-pro?color=cb3837&logo=npm)](https://www.npmjs.com/package/snappaste-pro)
@@ -58,6 +58,25 @@ does nothing, and you're stuck saving the file by hand and typing its path.
 - 📝 **Text on the clipboard** → normal paste, nothing changes.
 
 Perfect for **Claude Code**, AI coding assistants, and anything where you need to hand a screenshot to the terminal.
+
+---
+
+## 🤖 Works with any terminal AI
+
+SnapPaste Pro drops the screenshot's **file path** into your terminal — so any AI assistant
+that can read an image path can instantly "see" your screenshot. It's tool-agnostic and works
+with every major terminal-based AI coding assistant, including:
+
+| AI assistant | AI assistant |
+|---|---|
+| 🟣 **Claude Code** (Anthropic) | 🔵 **Gemini CLI** (Google) |
+| 🟢 **OpenAI Codex CLI** | 🐙 **GitHub Copilot CLI** |
+| 🛠️ **Aider** | 🟠 **Amazon Q Developer CLI** |
+| ⬛ **Cursor CLI** (`cursor-agent`) | 🦆 **Goose** (Block) |
+| 🧩 **opencode** | 🐲 **Qwen Code** |
+
+…and **any** other terminal/CLI AI that accepts an image file path. One keystroke, and your
+AI can see what you see. 👀
 
 ---
 

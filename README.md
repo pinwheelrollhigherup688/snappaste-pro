@@ -77,10 +77,12 @@ Perfect for **Claude Code**, AI coding assistants, and any tool where you need t
 > can read exactly what it does. It works fully offline — it never sends any data
 > anywhere, doesn't touch your files, and only reacts to `Ctrl + V` inside terminals.
 
-### Option 2 — npm (for developers) _(coming soon)_
+### Option 2 — npm (for developers)
 ```bash
 npx snappaste-pro install
 ```
+Requires [Node.js](https://nodejs.org). Other commands: `uninstall`, `start`, `status`.
+See it on npm: https://www.npmjs.com/package/snappaste-pro
 
 ---
 

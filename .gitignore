@@ -1,5 +1,6 @@
 # Internal business/strategy notes — keep private, do NOT publish
 PLAN.md
+MEMORY.md
 
 # Build output (installer is shipped via GitHub Releases, not committed)
 Output/

@@ -24,19 +24,11 @@ Works in CMD, PowerShell, Windows Terminal, and Claude Code.
 
 ## 🎬 Demo
 
-<!-- TODO: add a GIF here -->
-<!-- Record: take a screenshot (Win+Shift+S) -> focus terminal -> press Ctrl+V -> path is pasted -->
-<!-- Save as docs/demo.gif and replace the block below with:  ![SnapPaste Pro demo](docs/demo.gif) -->
+<p align="center">
+  <img src="docs/demo.gif" alt="SnapPaste Pro demo — paste a screenshot into the terminal and Claude reads it" width="100%">
+</p>
 
-```text
-   📸  Win + Shift + S         ⌨️  Ctrl + V  (in your terminal)
-   ┌─────────────────┐         ┌──────────────────────────────────────────────┐
-   │  [ screenshot ] │   ──▶   │ C:\Users\You\Pictures\SnapPaste Pro\shot.png │
-   └─────────────────┘         └──────────────────────────────────────────────┘
-        copied                    saved + path pasted automatically  ✅
-```
-
-> Take a screenshot → press **`Ctrl + V`** in your terminal → the image is saved and its path is pasted. That's it.
+> A screenshot pasted straight into the terminal with **`Ctrl + V`** — and the AI reads it instantly. That's the whole point. 🎯
 
 ---
 

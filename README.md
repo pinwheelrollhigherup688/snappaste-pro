@@ -4,12 +4,19 @@
 
 ### Mac-style screenshot paste for Windows terminals
 
-Paste screenshots **directly** with `Ctrl + V` in Windows **CMD**, **PowerShell**,
-**Windows Terminal**, and **Claude Code** — exactly like macOS.
+**Paste screenshots straight into your terminal with `Ctrl + V` — exactly like macOS.**
+Works in CMD, PowerShell, Windows Terminal, and Claude Code.
 
+[![npm version](https://img.shields.io/npm/v/snappaste-pro?color=cb3837&logo=npm)](https://www.npmjs.com/package/snappaste-pro)
+[![npm downloads](https://img.shields.io/npm/dt/snappaste-pro?color=cb3837&logo=npm)](https://www.npmjs.com/package/snappaste-pro)
+[![GitHub stars](https://img.shields.io/github/stars/saqibbinshabbir007/snappaste-pro?style=flat&logo=github)](https://github.com/saqibbinshabbir007/snappaste-pro/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue)
-![No Admin](https://img.shields.io/badge/install-no%20admin%20needed-success)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?logo=windows)
+![No Admin](https://img.shields.io/badge/install-no%20admin-success)
+
+[**Download**](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) ·
+[**npm**](https://www.npmjs.com/package/snappaste-pro) ·
+[**Report a bug**](https://github.com/saqibbinshabbir007/snappaste-pro/issues)
 
 </div>
 
@@ -19,10 +26,31 @@ Paste screenshots **directly** with `Ctrl + V` in Windows **CMD**, **PowerShell*
 
 <!-- TODO: add a GIF here -->
 <!-- Record: take a screenshot (Win+Shift+S) -> focus terminal -> press Ctrl+V -> path is pasted -->
-<!-- Save as docs/demo.gif and uncomment: -->
-<!-- ![SnapPaste Pro demo](docs/demo.gif) -->
+<!-- Save as docs/demo.gif and replace the block below with:  ![SnapPaste Pro demo](docs/demo.gif) -->
 
-> _Take a screenshot → press `Ctrl + V` in your terminal → the image is saved and its path is pasted automatically._
+```text
+   📸  Win + Shift + S         ⌨️  Ctrl + V  (in your terminal)
+   ┌─────────────────┐         ┌──────────────────────────────────────────────┐
+   │  [ screenshot ] │   ──▶   │ C:\Users\You\Pictures\SnapPaste Pro\shot.png │
+   └─────────────────┘         └──────────────────────────────────────────────┘
+        copied                    saved + path pasted automatically  ✅
+```
+
+> Take a screenshot → press **`Ctrl + V`** in your terminal → the image is saved and its path is pasted. That's it.
+
+---
+
+## ⚡ Quick Start
+
+**For everyone — installer (no Node.js, no admin):**
+1. [**Download `SnapPaste-Pro-Setup.exe`**](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest)
+2. Run it → **Next → Next → Finish**
+3. Take a screenshot and press `Ctrl + V` in your terminal 🎉
+
+**For developers — npm:**
+```bash
+npx snappaste-pro install
+```
 
 ---
 
@@ -34,28 +62,29 @@ does nothing, and you're stuck saving the file by hand and typing its path.
 
 **SnapPaste Pro fixes that.** When you press `Ctrl + V` in a terminal:
 
-- 🖼️ **Image on clipboard** → it's saved as a PNG and its **file path** is pasted automatically.
-- 📝 **Text on clipboard** → normal paste, no change.
+- 🖼️ **Image on the clipboard** → it's saved as a PNG and its **file path** is pasted automatically.
+- 📝 **Text on the clipboard** → normal paste, nothing changes.
 
-Perfect for **Claude Code**, AI coding assistants, and any tool where you need to hand a screenshot to the terminal.
+Perfect for **Claude Code**, AI coding assistants, and anything where you need to hand a screenshot to the terminal.
 
 ---
 
 ## ✨ Features
 
-- ⚡ **Instant** — image is saved natively (no slow background processes).
-- 🛡️ **Lightweight & clean** — no Python, no extra runtimes; AutoHotkey is bundled.
+- 🖼️ **Image → path, instantly** — screenshots become a ready-to-use file path.
+- 🪶 **Lightweight & clean** — no Python, no extra runtimes; AutoHotkey is bundled.
 - 🔒 **No admin required** — installs per-user.
 - 🚀 **Auto-start** — runs quietly in the background on login.
-- 🎯 **Smart** — only triggers on images; text paste stays exactly as fast as before.
-- 🧰 Extra commands: `pi` (PowerShell) and `pasteimg` (CMD).
+- 🎯 **Smart** — only triggers on images; text paste is untouched and just as fast.
+- 🧰 **Extra commands** — `pi` (PowerShell) and `pasteimg` (CMD).
+- 🌐 **Private & offline** — never sends any data anywhere.
 
 ---
 
-## 📦 Install
+## 📦 Install (details)
 
 ### Option 1 — Installer (recommended)
-1. Download **`SnapPaste-Pro-Setup.exe`** from the [Releases](../../releases) page.
+1. Download **`SnapPaste-Pro-Setup.exe`** from the [Releases](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) page.
 2. Run it (Next → Next → Finish). No admin needed.
 3. Done — take a screenshot and press `Ctrl + V` in your terminal.
 
@@ -65,8 +94,7 @@ Perfect for **Claude Code**, AI coding assistants, and any tool where you need t
 > **"Windows protected your PC"** screen with **"Unknown publisher"**.
 >
 > **This does _not_ mean the app is unsafe.** It only appears because the app is
-> not yet code-signed (a paid certificate / Azure verification we haven't purchased
-> yet). To continue:
+> not yet code-signed (a paid certificate we haven't purchased yet). To continue:
 >
 > 1. Click **More info**
 > 2. Click **Run anyway**
@@ -81,8 +109,14 @@ Perfect for **Claude Code**, AI coding assistants, and any tool where you need t
 ```bash
 npx snappaste-pro install
 ```
-Requires [Node.js](https://nodejs.org). Other commands: `uninstall`, `start`, `status`.
-See it on npm: https://www.npmjs.com/package/snappaste-pro
+Requires [Node.js](https://nodejs.org). Other commands:
+
+```bash
+npx snappaste-pro status      # show status
+npx snappaste-pro start       # start it now
+npx snappaste-pro uninstall   # remove completely
+```
+See it on npm: **https://www.npmjs.com/package/snappaste-pro**
 
 ---
 
@@ -105,16 +139,38 @@ See it on npm: https://www.npmjs.com/package/snappaste-pro
 
 ## 🛠️ How it works
 
-A small AutoHotkey script watches for `Ctrl + V` in terminal windows. If the clipboard
-contains an image, it saves it as a PNG using the Windows GDI+ API, replaces the
-clipboard with the file path, and pastes that — all in a few milliseconds.
+A small bundled [AutoHotkey](https://www.autohotkey.com/) script watches for `Ctrl + V`
+in terminal windows. If the clipboard holds an image, it saves it as a PNG, replaces the
+clipboard with the file path, and pastes that. If the clipboard holds text, it just pastes
+normally. Everything runs locally on your machine.
+
+---
+
+## 🙋 FAQ
+
+**Is it safe?**
+Yes. It's open-source (read the code here), runs fully offline, sends no data anywhere,
+doesn't touch your personal files, and only reacts to `Ctrl + V` inside terminal windows.
+
+**Why does Windows show a SmartScreen warning?**
+Because the installer isn't code-signed yet (signing is a paid certificate). It does **not**
+mean the app is harmful — click **More info → Run anyway**.
+
+**Where are my screenshots saved?**
+In `…\Pictures\SnapPaste Pro\`, named `screenshot_<timestamp>.png`.
+
+**Which terminals are supported?**
+Windows Terminal, CMD, PowerShell, PowerShell 7 (pwsh), Claude Code, and conhost.
+
+**Does it slow down normal copy/paste?**
+No. It only acts when the clipboard contains an image; text paste is unchanged.
 
 ---
 
 ## 🗑️ Uninstall
 
-**Settings → Apps → SnapPaste Pro → Uninstall.** It cleanly removes the app, the
-startup entry, the PATH entry, and the PowerShell profile addition.
+**Settings → Apps → SnapPaste Pro → Uninstall** (or `npx snappaste-pro uninstall`).
+It cleanly removes the app, the startup entry, the PATH entry, and the PowerShell profile addition.
 
 ---
 
@@ -140,8 +196,13 @@ ISCC.exe SnapPastePro.iss
 
 <div align="center">
 
-**Built by Saqib Bin Shabbir** — Full Stack Developer & Agentic AI Specialist
+### Built by **Saqib Bin Shabbir**
+Full Stack Developer &amp; Agentic AI Specialist
 
-If this saved you time, consider giving it a ⭐ — it really helps!
+[GitHub](https://github.com/saqibbinshabbir007) ·
+[npm](https://www.npmjs.com/package/snappaste-pro) ·
+[Issues](https://github.com/saqibbinshabbir007/snappaste-pro/issues)
+
+**If SnapPaste Pro saved you time, please give it a ⭐ — it really helps!**
 
 </div>

